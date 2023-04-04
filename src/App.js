@@ -5,7 +5,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
 import Qualification from "./components/Qualification";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Services />
         <Skills />
         <Qualification />
-        <Portfolio />
+        <Projects />
         <Contact />
       </main>
       <footer></footer>
