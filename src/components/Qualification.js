@@ -1,5 +1,5 @@
 import React from "react";
-import QualificationLayout from "./QualificationLayout";
+import QualificationLayout from "./layout/QualificationLayout";
 import { v4 as uuidv4 } from "uuid";
 import { institutionLogo } from "../data/institutionLogo";
 import { education } from "../data/education";
@@ -7,7 +7,7 @@ import { work } from "../data/work";
 
 const Qualification = () => {
   return (
-    <section>
+    <section id="qualification">
       <p>A Summary of My Background</p>
       <h2>Qualification</h2>
       <QualificationLayout cat={education} />

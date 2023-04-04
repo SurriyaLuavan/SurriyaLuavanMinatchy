@@ -6,7 +6,7 @@ const QualificationCard = ({ cardInfo }) => {
     <li>
       <h4>{cardInfo.title}</h4>
       <p>{cardInfo.program}</p>
-      <img src={landmarkIcon} alt="landmarkIcon" width="25" />
+      <img src={landmarkIcon} alt="" width="25" />
       <p>
         {cardInfo.year} | {cardInfo.institution}
       </p>

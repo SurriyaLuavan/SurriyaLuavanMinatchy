@@ -3,7 +3,7 @@ import aboutIllustrators from "../assets/About-me.png";
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <img src={aboutIllustrators} width="400px" alt="developer-illustrator" />
       <p>Let me introduce myself</p>
       <h2>About me</h2>
@@ -18,8 +18,8 @@ const About = () => {
         trends and experimenting with new technologies to stay at the forefront
         of the industry
       </p>
-      <button>Contact me</button>
-      <button>Resume</button>
+      <a href="#contact">Contact me</a>
+      <a href="#resume">Resume</a>
     </section>
   );
 };
