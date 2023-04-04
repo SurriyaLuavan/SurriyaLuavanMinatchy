@@ -3,9 +3,9 @@ import logo from "../assets/Logo.png";
 import githubLogo from "../assets/icons/Github.svg";
 import linkedinLogo from "../assets/icons/Linkedin.svg";
 
-const NavBar = () => {
+const Header = () => {
   return (
-    <>
+    <header>
       <div className="logo">
         <img src={logo} alt="logo" width="50px" />
         <p>Surriya</p>
@@ -42,8 +42,8 @@ const NavBar = () => {
         </li>
       </ul>
       <button type="button">Let's Talk</button>
-    </>
+    </header>
   );
 };
 
-export default NavBar;
+export default Header;
