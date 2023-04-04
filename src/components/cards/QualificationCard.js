@@ -1,7 +1,17 @@
 import React from "react";
+import landmarkIcon from "../../assets/qualifications/Landmark.png";
 
-const QualificationCard = () => {
-  return <div></div>;
+const QualificationCard = ({ cardInfo }) => {
+  return (
+    <li>
+      <h4>{cardInfo.title}</h4>
+      <p>{cardInfo.program}</p>
+      <img src={landmarkIcon} alt="landmarkIcon" width="25" />
+      <p>
+        {cardInfo.year} | {cardInfo.institution}
+      </p>
+    </li>
+  );
 };
 
 export default QualificationCard;

@@ -1,18 +1,17 @@
 import React from "react";
-import { skills } from "../data";
+import { skills } from "../data/skills";
 import { v4 as uuidv4 } from "uuid";
 import SkillCard from "./cards/SkillCard";
 
 const Skills = () => {
   return (
     <section>
-      <p>What I do</p>
+      <p>What I am good at</p>
       <h2>Skills</h2>
-      <ul>
-        {skills.map((card) => {
-          return <SkillCard key={uuidv4()} card={card} />;
-        })}
-      </ul>
+
+      {skills.map((card) => {
+        return <SkillCard key={uuidv4()} card={card} />;
+      })}
     </section>
   );
 };
