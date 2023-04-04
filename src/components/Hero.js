@@ -11,8 +11,7 @@ const Hero = () => {
         code.
       </p>
       <button type="button">
-        {" "}
-        <a href="#projects">VIEW PORTFOLIO</a>{" "}
+        <a href="#projects">view projects</a>
       </button>
       <img src={myPhoto} alt="surriya" width="700px" />
     </section>
