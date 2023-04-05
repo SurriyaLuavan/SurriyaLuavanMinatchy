@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+
+:root {
+  --ff-primary: "Space Grotesk", sans-serif;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --ruby: #29d882;
+  --sec-ruby: #00bd95;
+  --white: #ffff;
+  --black: #000;
+  --alcohol: #f0fcf9;
+  --primary: #171c23;
+  --secondary: #21272f;
+  --tertiary: #88949b;
+
+  --clr-accent-600: var(--ruby);
+  --clr-accent-400: var(--sec-ruby);
+  --clr-tertiary: var(--tertiary);
+  --clr-primary-800: var(--primary);
+  --clr-primary-500: var(--secondary);
+  --clr-secondary-800: var(--white);
+  --clr-secondary-500: var(--alcohol);
+  --clr-theme: var(--black);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-mode {
+  --clr-theme: var(--white);
+  --clr-primary-800: var(--white);
+  --clr-primary-500: var(--alcohol);
+  --clr-secondary-800: var(--primary);
+  --clr-secondary-500: var(--secondary);
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-secondary-800);
+  color: var(--clr-primary-800);
+}
+
+/* css reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-red6ced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* general styling */
+
+svg.logo {
+  fill: var(--clr-theme);
 }

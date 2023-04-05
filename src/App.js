@@ -7,10 +7,11 @@ import Skills from "./components/Skills";
 import Qualification from "./components/Qualification";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ThemeProvider from "./context/ThemeProvider";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <main>
         <Hero />
@@ -21,7 +22,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

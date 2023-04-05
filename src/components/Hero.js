@@ -3,7 +3,7 @@ import myPhoto from "../assets/myPhoto.png";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="hero">
       <h1>Hi There! I'm Surriya Luavan Minatchy</h1>
       <p>
         A dedicated frontend web developer who strives to create beautiful and
