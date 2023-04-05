@@ -35,7 +35,7 @@ const Footer = () => {
   );
 
   return (
-    <footer>
+    <footer className="bg-accent">
       <div className="logo">
         <a href="#hero">
           <img
@@ -43,7 +43,9 @@ const Footer = () => {
             alt="logo"
             width="60px"
           />
-          <p>Surriya Luavan Minatchy</p>
+          <p className="fs-primary-subheading fw-semi-bold text-footer">
+            Surriya Luavan Minatchy
+          </p>
         </a>
       </div>
       <ul className="socials">

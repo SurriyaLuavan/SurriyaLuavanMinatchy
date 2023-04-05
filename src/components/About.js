@@ -5,9 +5,11 @@ const About = () => {
   return (
     <section id="about">
       <img src={aboutIllustrators} width="400px" alt="developer-illustrator" />
-      <p>Let me introduce myself</p>
-      <h2>About me</h2>
-      <p>
+      <p className="uppercase fs-secondary-subheading fw-semi-bold">
+        Let me introduce myself
+      </p>
+      <h2 className="fs-secondary-heading fw-bold text-accent">About me</h2>
+      <p className="fs-secondary-body fw-regular text-tertiary">
         As a budding frontend web developer, I'm passionate about creating
         user-friendly web experiences that not only look great but are also easy
         to use. With a Master's degree in Electrical and Computer Engineering
@@ -18,8 +20,16 @@ const About = () => {
         trends and experimenting with new technologies to stay at the forefront
         of the industry
       </p>
-      <a href="#contact">Contact me</a>
-      <a href="#resume">Resume</a>
+      <button className="btn">
+        <a href="#contact" className="uppercase">
+          Contact
+        </a>
+      </button>{" "}
+      <button className="btn inverted">
+        <a href="#resume" className="uppercase">
+          Resume
+        </a>
+      </button>
     </section>
   );
 };

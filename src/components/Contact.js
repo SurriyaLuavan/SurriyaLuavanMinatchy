@@ -3,9 +3,11 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <p>Get in touch</p>
-      <h2>Contact</h2>
+    <section id="contact" className="bg-accent">
+      <p className="uppercase fs-secondary-subheading fw-semi-bold text-footer">
+        Get in touch
+      </p>
+      <h2 className="fs-secondary-heading fw-bold text-footer">Contact</h2>
       <ContactForm />
       <article
         style={{
@@ -29,12 +31,12 @@ const Contact = () => {
         </div>
       </article>
       <article>
-        <h3>Phone</h3>
-        <p>+1 (250) 884-2465</p>
+        <h3 className="fs-primary-body fw-bold text-footer">Phone</h3>
+        <p className="text-footer fw-semi-bold ">+1 (250) 884-2465</p>
       </article>
       <article>
-        <h3>Email</h3>
-        <p>surriyaluavan@gmail.com</p>
+        <h3 className="fs-primary-body fw-bold text-footer">Email</h3>
+        <p className="text-footer fw-semi-bold ">surriyaluavan@gmail.com</p>
       </article>
     </section>
   );

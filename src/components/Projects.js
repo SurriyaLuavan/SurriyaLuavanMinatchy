@@ -6,8 +6,10 @@ import { v4 as uuidv4 } from "uuid";
 const Projects = () => {
   return (
     <section id="projects">
-      <p>Some of my recent work</p>
-      <h2>Projects</h2>
+      <p className="uppercase fs-secondary-subheading fw-semi-bold">
+        Some of my recent work
+      </p>
+      <h2 className="fs-secondary-heading fw-bold text-accent">Projects</h2>
       <ul>
         {projects.map((project) => {
           return <ProjectCard key={uuidv4()} projectInfo={project} />;

@@ -8,8 +8,12 @@ import { work } from "../data/work";
 const Qualification = () => {
   return (
     <section id="qualification">
-      <p>A Summary of My Background</p>
-      <h2>Qualification</h2>
+      <p className="uppercase fs-secondary-subheading fw-semi-bold">
+        A Summary of My Background
+      </p>
+      <h2 className="fs-secondary-heading fw-bold text-accent">
+        Qualification
+      </h2>
       <QualificationLayout cat={education} />
       <QualificationLayout cat={work} />
       <ul>

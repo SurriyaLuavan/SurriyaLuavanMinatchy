@@ -6,8 +6,10 @@ import SkillCard from "./cards/SkillCard";
 const Skills = () => {
   return (
     <section id="skills">
-      <p>What I am good at</p>
-      <h2>Skills</h2>
+      <p className="uppercase fs-secondary-subheading fw-semi-bold">
+        What I am good at
+      </p>
+      <h2 className="fs-secondary-heading fw-bold text-accent">Skills</h2>
 
       {skills.map((card) => {
         return <SkillCard key={uuidv4()} card={card} />;

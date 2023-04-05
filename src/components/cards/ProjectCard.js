@@ -7,14 +7,30 @@ const PortfolioCard = ({ projectInfo }) => {
         alt={`${projectInfo.title} screenshot`}
         width="500px"
       />
-      <h3>{projectInfo.title}</h3>
-      <p>{projectInfo.info}</p>
-      <a href={projectInfo.liveLink} target="_blank" rel="noreferrer">
-        Live Demo
-      </a>
-      <a href={projectInfo.codeLink} target="_blank" rel="noreferrer">
-        Source Code
-      </a>
+      <h3 className="fs-primary-body fw-semi-bold">{projectInfo.title}</h3>
+      <p className="fs-secondary-body fw-regular text-tertiary">
+        {projectInfo.info}
+      </p>
+      <button className="btn">
+        <a
+          href={projectInfo.liveLink}
+          className="uppercase"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Live Demo
+        </a>
+      </button>{" "}
+      <button className="btn inverted">
+        <a
+          href={projectInfo.codeLink}
+          className="uppercase"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source Code
+        </a>
+      </button>
     </li>
   );
 };

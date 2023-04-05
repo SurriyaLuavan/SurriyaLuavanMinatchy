@@ -9,7 +9,7 @@ const Header = () => {
     theme === "dark" ? (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={33}
+        width={30}
         viewBox="0 0 24 24"
         fill="#f1e408"
         onClick={toggleTheme}
@@ -20,7 +20,7 @@ const Header = () => {
     ) : (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={33}
+        width={30}
         viewBox="0 0 24 24"
         fill="#000000"
         onClick={toggleTheme}
@@ -63,10 +63,10 @@ const Header = () => {
       <div className="logo">
         <a href="#hero">
           <img src={logo} alt="logo" width="50px" />
-          <p>Surriya</p>
+          <p className="fs-primary-subheading fw-semi-bold">Surriya</p>
         </a>
       </div>
-      <nav>
+      <nav className="fs-secondary-body">
         <ul>
           <li>
             <a href="#about">About</a>
