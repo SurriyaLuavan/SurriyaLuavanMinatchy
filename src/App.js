@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Qualification from "./components/Qualification";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import BackToTopButton from "./components/BackToTopButton";
 import ThemeProvider from "./context/ThemeProvider";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
+      <BackToTopButton />
       <Footer />
     </ThemeProvider>
   );
