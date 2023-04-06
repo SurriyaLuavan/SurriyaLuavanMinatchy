@@ -101,60 +101,62 @@ const Header = () => {
   );
 
   return (
-    <header className="padding-inline padding-container-top">
-      <div className="logo-container">
-        <a href="#Hero">
-          <img src={logo} alt="logo" width="50px" />
-          <p className="fs-primary-body fw-bold">Surriya</p>
-        </a>
-      </div>
-      {windowWidth > 800 && (
-        <nav className="nav-container | fs-secondary-body fw-semi-bold">
-          <ul>
-            <li>
-              <a href="#About">About</a>
-            </li>
-            <li>
-              <a href="#Skills">Skills</a>
-            </li>
-            <li>
-              <a href="#Qualification">Qualification</a>
-            </li>
-            <li>
-              <a href="#Projects">Projects</a>
-            </li>
-            <li>
-              <a href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      )}
-      <div className="social-container">
-        {windowWidth > 640 && (
-          <ul className="socials">
-            <li>
-              <a
-                href="https://github.com/SurriyaLuavan"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {githubLogo}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/surriya-luavan-minatchy/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {linkedinLogo}
-              </a>
-            </li>
-          </ul>
+    <header className="padding-inline padding-block padding-container-top  bg-secondary">
+      <div class="header-wrapper">
+        <div className="logo-container">
+          <a href="#Hero">
+            <img src={logo} alt="logo" width="50px" />
+            <p className="fs-primary-body fw-bold">Surriya</p>
+          </a>
+        </div>
+        {windowWidth > 800 && (
+          <nav className="nav-container | fs-secondary-body fw-semi-bold">
+            <ul>
+              <li>
+                <a href="#About">About</a>
+              </li>
+              <li>
+                <a href="#Skills">Skills</a>
+              </li>
+              <li>
+                <a href="#Qualification">Qualification</a>
+              </li>
+              <li>
+                <a href="#Projects">Projects</a>
+              </li>
+              <li>
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
         )}
-        {themeSwitch}
-        {windowWidth < 800 && mobileMenu}
-        {<SideBarNav navOpen={navOpen} toggleNavOpen={toggleDrawer} />}
+        <div className="social-container">
+          {windowWidth > 640 && (
+            <ul className="socials">
+              <li>
+                <a
+                  href="https://github.com/SurriyaLuavan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {githubLogo}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/surriya-luavan-minatchy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {linkedinLogo}
+                </a>
+              </li>
+            </ul>
+          )}
+          {themeSwitch}
+          {windowWidth < 800 && mobileMenu}
+          {<SideBarNav navOpen={navOpen} toggleNavOpen={toggleDrawer} />}
+        </div>
       </div>
     </header>
   );

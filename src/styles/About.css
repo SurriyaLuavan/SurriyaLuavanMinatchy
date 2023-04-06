@@ -1,0 +1,37 @@
+.wrapper-container {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.illustImage {
+  display: none;
+  align-self: center;
+  max-width: 400px;
+}
+
+.about-info {
+  display: grid;
+  place-items: start;
+  place-content: center;
+  gap: 1rem;
+}
+
+.about-button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 55em) {
+  .wrapper-container {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+  .illustImage {
+    display: block;
+  }
+
+  .about-info {
+    gap: 2rem;
+  }
+}

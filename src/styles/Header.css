@@ -1,10 +1,12 @@
-header {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
-header > * {
+.header-wrapper > * {
   flex: 1;
 }
 

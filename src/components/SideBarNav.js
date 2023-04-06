@@ -39,7 +39,7 @@ const SideBarNav = ({ navOpen, toggleNavOpen }) => {
     <Box
       sx={{ width: 250, minHeight: "100vh" }}
       role="presentation"
-      style={{ backgroundColor: theme === "dark" ? "#171c23" : "#f0fcf9" }}
+      style={{ backgroundColor: theme === "dark" ? "#21272f" : "#f0fcf9" }}
       className="padding-container-top"
     >
       <ul className="socials-container">
@@ -63,7 +63,7 @@ const SideBarNav = ({ navOpen, toggleNavOpen }) => {
         </li>
         <button
           className="closeBtn text-primary"
-          style={{ backgroundColor: theme === "dark" ? "#171c23" : "#f0fcf9" }}
+          style={{ backgroundColor: theme === "dark" ? "#21272f" : "#f0fcf9" }}
           onClick={toggleNavOpen(false)}
         >
           &times;

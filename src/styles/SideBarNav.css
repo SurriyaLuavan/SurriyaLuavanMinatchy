@@ -1,7 +1,6 @@
 .socials-container {
   display: flex;
   padding-inline: 2.5rem;
-  /* padding-block: 1rem; */
   gap: 1rem;
   align-items: center;
 }
