@@ -22,7 +22,7 @@
   --clr-primary-500: var(--secondary);
   --clr-secondary-800: var(--white);
   --clr-secondary-500: var(--alcohol);
-  --clr-theme: var(--white);
+  --clr-theme: var(--black);
 
   --fs-200: 0.875rem;
   --fs-400: 1rem;
@@ -40,7 +40,7 @@
 }
 
 .dark-mode {
-  --clr-theme: var(--black);
+  --clr-theme: var(--white);
   --clr-primary-800: var(--white);
   --clr-primary-500: var(--alcohol);
   --clr-secondary-800: var(--primary);
@@ -91,6 +91,10 @@ a:not([class]) {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 /* Make images easier to work with */

@@ -13,17 +13,19 @@ import ThemeProvider from "./context/ThemeProvider";
 function App() {
   return (
     <ThemeProvider>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Qualification />
-        <Projects />
-        <Contact />
-      </main>
-      <BackToTopButton />
-      <Footer />
+      <div className="app-container">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Qualification />
+          <Projects />
+          <Contact />
+        </main>
+        <BackToTopButton />
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }
