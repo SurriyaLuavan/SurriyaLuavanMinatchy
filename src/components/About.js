@@ -3,7 +3,7 @@ import aboutIllustrators from "../assets/About-me.png";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="About">
       <img src={aboutIllustrators} width="400px" alt="developer-illustrator" />
       <p className="uppercase fs-secondary-subheading fw-semi-bold">
         Let me introduce myself
@@ -21,7 +21,7 @@ const About = () => {
         of the industry
       </p>
       <button className="btn">
-        <a href="#contact" className="uppercase">
+        <a href="#Contact" className="uppercase">
           Contact
         </a>
       </button>{" "}

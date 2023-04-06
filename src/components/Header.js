@@ -2,10 +2,34 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/Logo.png";
 import { useTheme } from "../context/ThemeProvider";
 import "../styles/Header.css";
+import SideBarNav from "./SideBarNav";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [navOpen, setNavOpen] = useState(true);
+
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setNavOpen(open);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const themeSwitch =
     theme === "dark" ? (
@@ -41,7 +65,8 @@ const Header = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       id="bars"
-      className="logo"
+      className="logo theme"
+      onClick={toggleDrawer(true)}
     >
       <path d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" />
     </svg>
@@ -75,22 +100,10 @@ const Header = () => {
     </svg>
   );
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <header>
       <div className="logo-container">
-        <a href="#hero">
+        <a href="#Hero">
           <img src={logo} alt="logo" width="50px" />
           <p className="fs-primary-subheading fw-bold">Surriya</p>
         </a>
@@ -99,19 +112,19 @@ const Header = () => {
         <nav className="nav-container | fs-secondary-body fw-semi-bold">
           <ul>
             <li>
-              <a href="#about">About</a>
+              <a href="#About">About</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#Skills">Skills</a>
             </li>
             <li>
-              <a href="#qualification">Qualification</a>
+              <a href="#Qualification">Qualification</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -141,6 +154,7 @@ const Header = () => {
         )}
         {themeSwitch}
         {windowWidth < 800 && mobileMenu}
+        {<SideBarNav navOpen={navOpen} toggleNavOpen={toggleDrawer} />}
       </div>
     </header>
   );

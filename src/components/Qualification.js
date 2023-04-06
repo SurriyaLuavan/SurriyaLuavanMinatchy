@@ -7,7 +7,7 @@ import { work } from "../data/work";
 
 const Qualification = () => {
   return (
-    <section id="qualification">
+    <section id="Qualification">
       <p className="uppercase fs-secondary-subheading fw-semi-bold">
         A Summary of My Background
       </p>

@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-accent">
+    <section id="Contact" className="bg-accent">
       <p className="uppercase fs-secondary-subheading fw-semi-bold text-footer">
         Get in touch
       </p>

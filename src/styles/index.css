@@ -187,6 +187,14 @@ svg.logo {
   background-color: var(--clr-accent-600);
 }
 
+.bg-primary {
+  background-color: var(--clr-primary-800);
+}
+
+.text-primary {
+  color: var(--clr-primary-800);
+}
+
 .text-accent {
   color: var(--clr-accent-600);
 }
