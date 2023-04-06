@@ -37,9 +37,10 @@ const SideBarNav = ({ navOpen, toggleNavOpen }) => {
 
   const list = (
     <Box
-      sx={{ width: 250, height: "100vh" }}
+      sx={{ width: 250, minHeight: "100vh" }}
       role="presentation"
       style={{ backgroundColor: theme === "dark" ? "#171c23" : "#f0fcf9" }}
+      className="padding-container-top"
     >
       <ul className="socials-container">
         <li>
@@ -68,10 +69,10 @@ const SideBarNav = ({ navOpen, toggleNavOpen }) => {
           &times;
         </button>
       </ul>
-      <ul className="link-container | fs-secondary-body fw-semi-bold">
+      <ul className="link-container | fs-primary-body fw-semi-bold">
         {["About", "Skills", "Qualification", "Projects", "Contact"].map(
-          (text) => (
-            <li>
+          (text, index) => (
+            <li key={index}>
               <button className="linkBtn">
                 <a href={`#${text}`} onClick={toggleNavOpen(false)}>
                   {text}

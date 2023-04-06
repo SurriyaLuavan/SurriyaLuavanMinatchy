@@ -3,7 +3,7 @@ import aboutIllustrators from "../assets/About-me.png";
 
 const About = () => {
   return (
-    <section id="About">
+    <section id="About" className="padding-inline">
       <img src={aboutIllustrators} width="400px" alt="developer-illustrator" />
       <p className="uppercase fs-secondary-subheading fw-semi-bold">
         Let me introduce myself

@@ -24,19 +24,55 @@
   --clr-secondary-500: var(--alcohol);
   --clr-theme: var(--black);
 
+  --fs-100: 0.8125rem;
   --fs-200: 0.875rem;
+  --fs-300: 0.925rem;
   --fs-400: 1rem;
+  --fs-450: 1.125rem;
   --fs-500: 1.25rem;
   --fs-600: 1.5rem;
+  --fs-650: 1.75rem;
   --fs-700: 2rem;
   --fs-800: 3rem;
 
-  --fs-primary-heading: var(--fs-800);
-  --fs-primary-subheading: var(--fs-500);
-  --fs-primary-body: var(--fs-500);
-  --fs-secondary-heading: var(--fs-700);
-  --fs-secondary-body: var(--fs-400);
-  --fs-secondary-subheading: var(--fs-200);
+  --fs-primary-heading: var(--fs-650);
+  --fs-primary-subheading: var(--fs-300);
+  --fs-primary-body: var(--fs-400);
+  --fs-secondary-heading: var(--fs-600);
+  --fs-secondary-subheading: var(--fs-100);
+  --fs-secondary-body: var(--fs-300);
+
+  --padding-inline: 1rem;
+  --padding-container-top: 2rem;
+  --padding-container-bottom: 4rem;
+  --padding-block: 1rem;
+}
+
+@media (min-width: 40em) and (max-width: 70em) {
+  :root {
+    --fs-primary-heading: var(--fs-700);
+    --fs-primary-subheading: var(--fs-400);
+    --fs-primary-body: var(--fs-450);
+    --fs-secondary-heading: var(--fs-650);
+    --fs-secondary-body: var(--fs-400);
+    --fs-secondary-subheading: var(--fs-200);
+
+    --padding-inline: 2rem;
+    --padding-block: 1.5rem;
+  }
+}
+@media (min-width: 70em) {
+  :root {
+    --fs-primary-heading: var(--fs-800);
+    --fs-primary-subheading: var(--fs-500);
+    --fs-primary-body: var(--fs-500);
+    --fs-secondary-heading: var(--fs-700);
+    --fs-secondary-body: var(--fs-400);
+    --fs-secondary-subheading: var(--fs-200);
+
+    --padding-inline: 3rem;
+    --padding-block: 2rem;
+  }
 }
 
 .dark-mode {
@@ -44,6 +80,7 @@
   --clr-primary-800: var(--white);
   --clr-primary-500: var(--alcohol);
   --clr-secondary-800: var(--primary);
+  /* --clr-secondary-800: var(--secondary); */
   --clr-secondary-500: var(--secondary);
 }
 
@@ -174,6 +211,22 @@ svg.logo {
 }
 
 /* utility classes */
+
+.padding-inline {
+  padding-inline: var(--padding-inline);
+}
+
+.padding-container-top {
+  padding-top: var(--padding-container-top);
+}
+
+.padding-container-bottom {
+  padding-bottom: var(--padding-container-bottom);
+}
+
+.padding-block {
+  padding-block: var(--padding-block);
+}
 
 .uppercase {
   text-transform: uppercase;

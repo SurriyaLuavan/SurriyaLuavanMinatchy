@@ -3,7 +3,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="Contact" className="bg-accent">
+    <section id="Contact" className="bg-accent | padding-inline">
       <p className="uppercase fs-secondary-subheading fw-semi-bold text-footer">
         Get in touch
       </p>
@@ -14,8 +14,8 @@ const Contact = () => {
           maxWidth: "100%",
           overflow: "hidden",
           color: "red",
-          width: 500,
-          height: 500,
+          width: 300,
+          height: 300,
           borderRadius: "5px",
         }}
       >

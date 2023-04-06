@@ -7,7 +7,7 @@ import SideBarNav from "./SideBarNav";
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [navOpen, setNavOpen] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -101,11 +101,11 @@ const Header = () => {
   );
 
   return (
-    <header>
+    <header className="padding-inline padding-container-top">
       <div className="logo-container">
         <a href="#Hero">
           <img src={logo} alt="logo" width="50px" />
-          <p className="fs-primary-subheading fw-bold">Surriya</p>
+          <p className="fs-primary-body fw-bold">Surriya</p>
         </a>
       </div>
       {windowWidth > 800 && (

@@ -35,7 +35,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-accent">
+    <footer className="bg-accent padding-container-bottom">
       <div className="logo">
         <a href="#hero">
           <img
