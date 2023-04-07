@@ -1,12 +1,16 @@
 import React from "react";
 import myPhoto from "../assets/myPhoto-mobile.png";
 import "../styles/Hero.css";
+import { useTheme } from "../context/ThemeProvider";
 
 const Hero = () => {
+  const { theme } = useTheme();
   return (
     <section
       id="Hero"
-      className="hero-container | bg-secondary padding-inline padding-block"
+      className={`hero-container | padding-inline padding-block ${
+        theme === "light" && "hero-light"
+      }`}
     >
       <div className="hero-wrapper">
         <svg

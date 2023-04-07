@@ -1,3 +1,15 @@
+.hero-container {
+  background: no-repeat url(../assets/background/wave-dark.svg),
+    linear-gradient(#171c23 0%, #171c23 100%);
+  background-position: bottom;
+}
+
+.hero-light {
+  background: no-repeat url(../assets/background/wave-light.svg),
+    linear-gradient(#fff 0%, #fff 100%);
+  background-position: bottom;
+}
+
 .hero-wrapper {
   width: 100%;
   display: grid;
@@ -15,8 +27,7 @@
 }
 
 .profile-svg {
-  min-width: 300px;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .text-container p {
