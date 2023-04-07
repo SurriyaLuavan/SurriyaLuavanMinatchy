@@ -11,26 +11,10 @@
 }
 
 .qual-connector {
-  display: block;
   position: absolute;
-  bottom: 170px;
   width: 1px;
   height: 420px;
   background-color: var(--clr-accent-600);
-}
-
-.qual-connector.edu {
-  bottom: 760px;
-}
-
-@media (min-width: 40em) and (max-width: 55em) {
-  .qual-connector {
-    bottom: 180px;
-  }
-
-  .qual-connector.edu {
-    bottom: 770px;
-  }
 }
 
 @media (min-width: 55em) {
@@ -50,5 +34,33 @@
 
   .qual-connector.edu {
     bottom: 185px;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 55em) {
+  .qual-connector {
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qual-connector.edu {
+    bottom: 560px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 40em) {
+  .qual-connector {
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qual-connector.edu {
+    bottom: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
