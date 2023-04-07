@@ -12,55 +12,58 @@
 
 .qual-connector {
   position: absolute;
-  width: 1px;
+  width: 1.5px;
   height: 420px;
   background-color: var(--clr-accent-600);
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 55em) {
   .qual-connector {
-    bottom: 180px;
+    bottom: -32px;
+    /* transform: translate(-50%, -50%); */
   }
 
   .qual-connector.edu {
-    bottom: 180px;
+    bottom: -32px;
+    /* transform: translate(-50%, -50%); */
   }
 }
 
 @media (min-width: 70em) {
   .qual-connector {
-    bottom: 185px;
+    bottom: -25px;
   }
 
   .qual-connector.edu {
-    bottom: 185px;
+    bottom: -25px;
   }
 }
 
 @media (min-width: 40em) and (max-width: 55em) {
   .qual-connector {
     bottom: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
   }
 
   .qual-connector.edu {
     bottom: 560px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
   }
 }
 
 @media (max-width: 40em) {
   .qual-connector {
     bottom: -40px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
   }
 
   .qual-connector.edu {
     bottom: 550px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
   }
 }
