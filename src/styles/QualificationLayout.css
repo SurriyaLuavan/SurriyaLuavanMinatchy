@@ -2,6 +2,7 @@
   display: grid;
   justify-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 .qual-list {
@@ -16,54 +17,20 @@
   height: 420px;
   background-color: var(--clr-accent-600);
   transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 400px;
+}
+
+.qual-connector.edu {
+  bottom: -788px;
 }
 
 @media (min-width: 55em) {
   .qual-connector {
-    bottom: -32px;
-    /* transform: translate(-50%, -50%); */
+    bottom: -193px;
   }
 
   .qual-connector.edu {
-    bottom: -32px;
-    /* transform: translate(-50%, -50%); */
-  }
-}
-
-@media (min-width: 70em) {
-  .qual-connector {
-    bottom: -25px;
-  }
-
-  .qual-connector.edu {
-    bottom: -25px;
-  }
-}
-
-@media (min-width: 40em) and (max-width: 55em) {
-  .qual-connector {
-    bottom: -30px;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-  }
-
-  .qual-connector.edu {
-    bottom: 560px;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-  }
-}
-
-@media (max-width: 40em) {
-  .qual-connector {
-    bottom: -40px;
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
-  }
-
-  .qual-connector.edu {
-    bottom: 550px;
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
+    bottom: -193px;
   }
 }
