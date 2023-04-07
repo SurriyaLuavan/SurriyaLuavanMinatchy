@@ -1,5 +1,6 @@
 import React from "react";
-import aboutIllustrators from "../assets/About-me.png";
+// import aboutIllustrators from "../assets/About-me.png";
+import aboutIllustrators from "../assets/About-cropped.png";
 import "../styles/About.css";
 
 const About = () => {
@@ -14,6 +15,11 @@ const About = () => {
           src={aboutIllustrators}
           alt="developer-illustrator"
         />
+        {/* <img
+          className="illustImage"
+          src={aboutIllustrators}
+          alt="developer-illustrator"
+        /> */}
         <div class="about-info">
           <div class="about-title">
             <p className="uppercase fs-secondary-subheading fw-semi-bold">

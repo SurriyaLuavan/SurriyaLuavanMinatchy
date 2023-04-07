@@ -4,11 +4,12 @@
   margin-inline: auto;
   place-content: center;
   place-items: center;
+  gap: 2rem;
 }
 
 .illustImage {
   align-self: center;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .about-info {
@@ -31,5 +32,12 @@
 
   .about-info {
     gap: 2rem;
+  }
+
+  .illustImage {
+    align-self: center;
+    /* max-width: 350px; */
+    /* max-width: 450px; */
+    max-width: 450px;
   }
 }
