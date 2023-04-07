@@ -17,7 +17,7 @@ export const work = {
       year: "Jan 2022 - Apr 2022",
     },
     {
-      title: "Co-instructor & Teaching Assistant",
+      title: "Co-instructor & TA",
       institution: "University of New Brunswick",
       program: "GSTA",
       year: "Sep 2021 - Apr 2022",

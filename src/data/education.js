@@ -11,14 +11,14 @@ export const education = {
       year: "Oct 2022 - Present",
     },
     {
-      title: "Master's Degree",
-      program: "Electrical and Computer Engineering",
+      title: "Master's Degree, Engineering",
+      program: "Electrical and Computer",
       institution: "University of New Brunswick",
       year: "Sept 2020 - Dec 2022",
     },
     {
-      title: "Bachelor's Degree",
-      program: "Electrical and Electronics Engineering",
+      title: "Bachelor's Degree, Engineering",
+      program: "Electrical and Electronics",
       institution: "Sri Krishna Technology",
       year: "Aug 2015 - Apr 2019",
     },

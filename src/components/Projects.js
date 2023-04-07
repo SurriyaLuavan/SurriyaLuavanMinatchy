@@ -5,7 +5,11 @@ import { v4 as uuidv4 } from "uuid";
 
 const Projects = () => {
   return (
-    <section id="Projects" className="padding-inline">
+    <section
+      id="Projects"
+      style={{ paddingTop: "10rem" }}
+      className="padding-inline"
+    >
       <p className="uppercase fs-secondary-subheading fw-semi-bold">
         Some of my recent work
       </p>

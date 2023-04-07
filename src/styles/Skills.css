@@ -8,10 +8,10 @@
 
 .skillCardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-columns: repeat(auto-fit, 140px);
   grid-auto-rows: 140px;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 @media (min-width: 55em) {
@@ -21,8 +21,8 @@
 
   .skillCardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 220px);
-    grid-auto-rows: 200px;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, 190px);
+    grid-auto-rows: 170px;
+    gap: 4rem;
   }
 }
