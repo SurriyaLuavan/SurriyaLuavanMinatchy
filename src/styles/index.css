@@ -205,7 +205,7 @@ svg.logo {
 
 .btn:hover,
 .btn:focus {
-  transform: translateY(-0.1em);
+  transform: translateY(-0.2em);
   cursor: pointer;
 }
 

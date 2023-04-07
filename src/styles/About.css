@@ -7,7 +7,7 @@
 .illustImage {
   display: none;
   align-self: center;
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 
 .about-info {
@@ -22,9 +22,9 @@
   gap: 1rem;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   .wrapper-container {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
   .illustImage {
