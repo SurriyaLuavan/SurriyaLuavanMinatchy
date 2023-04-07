@@ -9,7 +9,8 @@
 
 .illustImage {
   align-self: center;
-  max-width: 350px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .about-info {
@@ -32,11 +33,5 @@
 
   .about-info {
     gap: 2rem;
-  }
-}
-
-@media (min-width: 65em) {
-  .illustImage {
-    max-width: 450px;
   }
 }
