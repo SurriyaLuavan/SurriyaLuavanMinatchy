@@ -16,7 +16,7 @@
   max-width: 60px;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   .skillLogo {
     max-width: 75px;
   }

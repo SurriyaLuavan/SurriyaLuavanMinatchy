@@ -1,6 +1,6 @@
 .wrapper-container {
   display: grid;
-  max-width: 1200px;
+  max-width: 650px;
   margin-inline: auto;
   place-content: center;
   place-items: center;
@@ -27,6 +27,7 @@
 
 @media (min-width: 60em) {
   .wrapper-container {
+    max-width: 1200px;
     grid-template-columns: 1fr 1.4fr;
     gap: 3rem;
   }

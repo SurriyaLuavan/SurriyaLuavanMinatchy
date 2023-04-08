@@ -12,7 +12,7 @@
 
 .projects-wrapper {
   display: grid;
-  max-width: 1200px;
+  max-width: 650px;
   margin-inline: auto;
   padding-top: 4rem;
   padding-bottom: 10rem;
@@ -27,6 +27,7 @@
 
 @media (min-width: 40em) {
   .projects-wrapper {
+    max-width: 1200px;
     padding-top: 6rem;
   }
 }

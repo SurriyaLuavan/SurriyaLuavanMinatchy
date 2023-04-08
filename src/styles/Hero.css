@@ -15,7 +15,7 @@
   display: grid;
   place-items: center;
   grid-auto-flow: row;
-  max-width: 1200px;
+  max-width: 650px;
   margin-inline: auto;
   gap: 2rem;
 }
@@ -38,6 +38,7 @@
   .hero-wrapper {
     grid-auto-flow: column;
     grid-template-columns: 1.5fr 1fr;
+    max-width: 1200px;
   }
 
   .text-container {
