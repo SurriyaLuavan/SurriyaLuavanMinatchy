@@ -1,0 +1,19 @@
+.projects-wrapper {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-top: 4rem;
+  gap: 3rem;
+  text-align: center;
+}
+
+.project-card-container {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .projects-wrapper {
+    padding-top: 6rem;
+  }
+}

@@ -25,6 +25,7 @@
   --clr-theme: var(--black);
 
   --fs-100: 0.8125rem;
+  --fs-150: 0.85rem;
   --fs-200: 0.875rem;
   --fs-300: 0.925rem;
   --fs-400: 1rem;
@@ -41,6 +42,7 @@
   --fs-secondary-heading: var(--fs-600);
   --fs-secondary-subheading: var(--fs-100);
   --fs-secondary-body: var(--fs-300);
+  --fs-projects-body: var(--fs-150);
 
   --padding-inline: 1rem;
   --padding-container-top: 2rem;
@@ -56,6 +58,7 @@
     --fs-secondary-heading: var(--fs-650);
     --fs-secondary-body: var(--fs-400);
     --fs-secondary-subheading: var(--fs-200);
+    --fs-projects-body: var(--fs-200);
 
     --padding-inline: 2rem;
     --padding-block: 2.5rem;
@@ -69,6 +72,7 @@
     --fs-secondary-heading: var(--fs-700);
     --fs-secondary-body: var(--fs-400);
     --fs-secondary-subheading: var(--fs-200);
+    --fs-projects-body: var(--fs-300);
 
     --padding-inline: 3rem;
     --padding-block: 3rem;
@@ -285,6 +289,10 @@ svg.logo {
 
 .fs-secondary-body {
   font-size: var(--fs-secondary-body);
+}
+
+.fs-projects-body {
+  font-size: var(--fs-projects-body);
 }
 
 .fw-regular {

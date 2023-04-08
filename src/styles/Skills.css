@@ -1,5 +1,5 @@
 .skills-wrapper {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-inline: auto;
   display: grid;
   text-align: center;
@@ -21,8 +21,8 @@
 
   .skillCardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 190px);
-    grid-auto-rows: 170px;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, 165px);
+    grid-auto-rows: 165px;
+    gap: 3rem;
   }
 }

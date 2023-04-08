@@ -17,7 +17,7 @@
   max-width: 1200px;
   margin-inline: auto;
   gap: 3rem;
-  padding-block: 10rem 7.5rem;
+  padding-block: 5rem 5rem;
 }
 
 .qualification-card-container {
@@ -63,7 +63,9 @@
   .qualification-card-container {
     grid-auto-flow: column;
   }
-
+  .qualification-wrapper {
+    padding-block: 10rem 5rem;
+  }
   .init-logo-bar {
     max-width: 650px;
     bottom: -150px;
