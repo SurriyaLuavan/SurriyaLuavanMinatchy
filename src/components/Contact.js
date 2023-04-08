@@ -96,17 +96,21 @@ const Contact = () => {
                 theme === "light" && "contact-info-light"
               }`}
             >
-              <article className="icon-text">
-                <h3>{emailIcon}</h3>
-                <p className="text-footer fs-secondary-subheading fw-semi-bold ">
-                  surriyaluavan@gmail.com
-                </p>
+              <article>
+                <a className="icon-text" href="mailto: surriyaluavan@gmail.com">
+                  <h3>{emailIcon}</h3>
+                  <p className="text-footer fs-secondary-subheading fw-semi-bold ">
+                    surriyaluavan@gmail.com
+                  </p>
+                </a>
               </article>
-              <article className="icon-text">
-                <h3>{callIcon}</h3>
-                <p className="text-footer fs-secondary-subheading fw-semi-bold ">
-                  +1 (250) 884-2465
-                </p>
+              <article>
+                <a className="icon-text" href="tel:+12508842465">
+                  <h3>{callIcon}</h3>
+                  <p className="text-footer fs-secondary-subheading fw-semi-bold ">
+                    +1 (250) 884-2465
+                  </p>
+                </a>
               </article>
             </div>
           </article>

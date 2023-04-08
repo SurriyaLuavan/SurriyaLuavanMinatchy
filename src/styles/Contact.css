@@ -32,7 +32,7 @@
   display: grid;
   gap: 1rem;
   position: absolute;
-  background-color: rgb(41, 216, 130, 0.9);
+  background-color: rgb(41, 216, 130, 0.95);
   padding: 1rem;
   border: 2px solid #171c23;
   justify-items: start;
