@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className="contact-container | bg-accent  padding-block padding-inline"
+      className="contact-container | bg-accent padding-inline"
     >
       <div class="contact-wrapper">
         <div class="contact-title">
