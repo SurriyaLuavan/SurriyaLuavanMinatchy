@@ -45,9 +45,7 @@ const Footer = () => {
               alt="logo"
               width="60px"
             />
-            <p className="fs-primary-subheading fw-semi-bold text-footer">
-              Surriya Luavan Minatchy
-            </p>
+            <p className="fs-primary-body fw-bold text-footer">Surriya</p>
           </a>
         </div>
         <ul className="socials footer-logo">

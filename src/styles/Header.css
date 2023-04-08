@@ -1,3 +1,19 @@
+.header-container {
+  position: sticky;
+  top: 0;
+  padding-block: 0.5rem;
+  box-shadow: 0px 2em 60px -25px rgba(0, 0, 0, 0.9);
+  z-index: 10;
+}
+
+.header-container.light {
+  box-shadow: 0px 2em 50px -20px #88949b;
+}
+
+.header-padding-top {
+  padding: 0.75rem;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -54,4 +70,16 @@
 
 .theme {
   cursor: pointer;
+}
+
+@media (min-width: 40em) and (max-width: 70em) {
+  .header-container {
+    padding-block: 1rem 1rem;
+  }
+}
+
+@media (min-width: 70em) {
+  .header-container {
+    padding-block: 2rem 1rem;
+  }
 }

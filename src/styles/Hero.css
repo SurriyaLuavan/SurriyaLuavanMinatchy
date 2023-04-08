@@ -18,6 +18,7 @@
   max-width: 650px;
   margin-inline: auto;
   gap: 2rem;
+  padding-top: 2rem;
 }
 
 .text-container {

@@ -97,15 +97,15 @@ const Contact = () => {
               }`}
             >
               <article className="icon-text">
-                <h3>{callIcon}</h3>
-                <p className="text-footer fs-secondary-subheading fw-semi-bold ">
-                  +1 (250) 884-2465
-                </p>
-              </article>
-              <article className="icon-text">
                 <h3>{emailIcon}</h3>
                 <p className="text-footer fs-secondary-subheading fw-semi-bold ">
                   surriyaluavan@gmail.com
+                </p>
+              </article>
+              <article className="icon-text">
+                <h3>{callIcon}</h3>
+                <p className="text-footer fs-secondary-subheading fw-semi-bold ">
+                  +1 (250) 884-2465
                 </p>
               </article>
             </div>

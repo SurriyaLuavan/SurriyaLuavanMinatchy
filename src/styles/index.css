@@ -171,6 +171,31 @@ body {
   color: var(--clr-primary-800);
 }
 
+/* scroll position */
+
+#Hero {
+  scroll-margin-top: 10rem;
+}
+#About {
+  scroll-margin-top: 4rem;
+}
+
+#Skills {
+  scroll-margin-top: 5rem;
+}
+
+#Qualification {
+  scroll-margin-top: 6rem;
+}
+
+#Projects {
+  scroll-margin-top: 0rem;
+}
+
+#Contact {
+  scroll-margin-top: 5rem;
+}
+
 a,
 a:visited {
   color: var(--clr-primary-800);
