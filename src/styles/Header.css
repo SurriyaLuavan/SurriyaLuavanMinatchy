@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.mobile-menu,
+.theme-switch {
+  cursor: pointer;
+}
+
 .nav-container {
   flex: 2;
 }
