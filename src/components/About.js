@@ -42,7 +42,12 @@ const About = () => {
               </a>
             </button>{" "}
             <button className="btn inverted">
-              <a href="#resume" className="uppercase">
+              <a
+                href="https://drive.google.com/file/d/1sudZvLrHb_bonUopWvc9RhlnjFKNJojm/view?usp=share_link"
+                target="_blank"
+                className="uppercase"
+                rel="noopener noreferrer"
+              >
                 Resume
               </a>
             </button>
