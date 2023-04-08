@@ -1,0 +1,43 @@
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  grid-template-rows: 3.5rem 3.5rem 1fr;
+  max-width: 500px;
+}
+
+.input-field {
+  padding: 1rem;
+  border: 2px solid #21272f;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border: none;
+  outline: #f1fcf9 2px solid;
+}
+
+.input-field.form-light {
+  padding: 1rem;
+  border: 2px solid #f1fcf9;
+  border-radius: 5px;
+}
+
+.input-field.form-light:focus {
+  border: none;
+  outline: #21272f 2px solid;
+}
+
+.input-field::placeholder {
+  color: #21272f;
+  opacity: 0.65;
+}
+
+.input-field.form-light::placeholder {
+  color: #f1fcf9;
+  opacity: 0.65;
+}
+
+.submit-btn {
+  place-self: end;
+}

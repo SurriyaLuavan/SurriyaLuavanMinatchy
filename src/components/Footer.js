@@ -2,6 +2,7 @@ import React from "react";
 import logoLight from "../assets/Logo-light.png";
 import logoDark from "../assets/Logo-dark.png";
 import { useTheme } from "../context/ThemeProvider";
+import "../styles/Footer.css";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -35,39 +36,41 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-accent padding-container-bottom">
-      <div className="logo">
-        <a href="#hero">
-          <img
-            src={theme === "light" ? logoLight : logoDark}
-            alt="logo"
-            width="60px"
-          />
-          <p className="fs-primary-subheading fw-semi-bold text-footer">
-            Surriya Luavan Minatchy
-          </p>
-        </a>
+    <footer className="footer-container | bg-accent padding-inline padding-block padding-container-bottom">
+      <div className={`footer-wrapper ${theme === "light" && "footer-light"}`}>
+        <div>
+          <a href="#hero" className="footer-logo">
+            <img
+              src={theme === "light" ? logoLight : logoDark}
+              alt="logo"
+              width="60px"
+            />
+            <p className="fs-primary-subheading fw-semi-bold text-footer">
+              Surriya Luavan Minatchy
+            </p>
+          </a>
+        </div>
+        <ul className="socials footer-logo">
+          <li>
+            <a
+              href="https://github.com/SurriyaLuavan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {githubLogo}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/surriya-luavan-minatchy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {linkedinLogo}
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul className="socials">
-        <li>
-          <a
-            href="https://github.com/SurriyaLuavan"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {githubLogo}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/surriya-luavan-minatchy/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {linkedinLogo}
-          </a>
-        </li>
-      </ul>
     </footer>
   );
 };

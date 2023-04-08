@@ -11,7 +11,7 @@ export const projects = [
     liveLink: "https://entertain-hub-ebon.vercel.app/",
   },
   {
-    title: "IP Adress Tracker",
+    title: "IP Address Tracker",
     thumbnail: ipTrackerThumbnail,
     info: "An IP tracker application developed using React, ipfy API, and Leafleft API that allows users to easily track and display the geographical location of any specified IP address. The application is user-friendly and designed to provide accurate location information in a responsive layout suitable for any device.",
     codeLink: "https://github.com/SurriyaLuavan/IP-address-tracker",

@@ -1,8 +1,21 @@
+.projects-container {
+  background: no-repeat url(../assets/background/wave-contact.svg),
+    linear-gradient(#21272f 0%, #21272f 100%);
+  background-position: bottom;
+}
+
+.projects-light {
+  background: no-repeat url(../assets/background/wave-contact.svg),
+    linear-gradient(#f1fcf9 0%, #f1fcf9 100%);
+  background-position: bottom;
+}
+
 .projects-wrapper {
   display: grid;
   max-width: 1200px;
   margin-inline: auto;
   padding-top: 4rem;
+  padding-bottom: 10rem;
   gap: 3rem;
   text-align: center;
 }

@@ -6,11 +6,13 @@ import "../styles/Projects.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import { register } from "swiper/element/bundle";
+import { useTheme } from "../context/ThemeProvider";
 
 register();
 
 const Projects = () => {
   const swiperElRef = useRef(null);
+  const { theme } = useTheme();
 
   // useEffect(() => {
   //   // listen for Swiper events using addEventListener
@@ -26,7 +28,9 @@ const Projects = () => {
   return (
     <section
       id="Projects"
-      className="projects-container | padding-inline padding-block"
+      className={`projects-container | padding-inline padding-block ${
+        theme === "light" && "projects-light"
+      }`}
     >
       <div class="projects-wrapper">
         <div class="projects-title">

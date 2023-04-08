@@ -22,7 +22,8 @@
   --clr-primary-500: var(--secondary);
   --clr-secondary-800: var(--white);
   --clr-secondary-500: var(--alcohol);
-  --clr-theme: var(--black);
+  --clr-theme: var(--white);
+  --clr-inverted: var(--black);
 
   --fs-100: 0.8125rem;
   --fs-150: 0.85rem;
@@ -80,11 +81,12 @@
 }
 
 .dark-mode {
-  --clr-theme: var(--white);
   --clr-primary-800: var(--white);
   --clr-primary-500: var(--alcohol);
   --clr-secondary-800: var(--primary);
   --clr-secondary-500: var(--secondary);
+  --clr-theme: var(--black);
+  --clr-inverted: var(--white);
 }
 
 /* css reset */
@@ -176,6 +178,10 @@ a:visited {
 
 svg.logo {
   fill: var(--clr-theme);
+}
+
+svg.logo.inverted {
+  fill: var(--clr-inverted);
 }
 
 .btn {
