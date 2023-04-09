@@ -11,7 +11,7 @@
 }
 
 .header-padding-top {
-  padding: 0.75rem;
+  padding-top: 0.75rem;
 }
 
 .header-wrapper {
@@ -74,12 +74,20 @@
 
 @media (min-width: 40em) and (max-width: 70em) {
   .header-container {
-    padding-block: 1rem 1rem;
+    padding-block: 0.5rem;
+  }
+
+  .header-padding-top {
+    padding-top: 1.25rem;
   }
 }
 
 @media (min-width: 70em) {
   .header-container {
-    padding-block: 2rem 1rem;
+    padding-block: 0.75rem;
+  }
+
+  .header-padding-top {
+    padding-top: 1.25rem;
   }
 }

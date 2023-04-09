@@ -76,23 +76,6 @@ const ContactForm = () => {
           <p className="error-message fw-semi-bold">{formik.errors.name}</p>
         ) : null}
       </label>
-      {/* <input
-          id="name"
-          name="name"
-          value={formik.values.name}
-          onChange={formik.handleChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          className={`input-field | ${theme === "light" && "form-light"} ${
-            formik.errors.name && !focus.name && "error-message"
-          } bg-accent fs-secondary-body fw-regular text-footer`}
-          type="text"
-          placeholder="NAME"
-        />
-        {formik.errors.name && !focus.name ? (
-          <div className="error-message">{formik.errors.name}</div>
-        ) : null} */}
-
       <label htmlfor="email" className="label-container">
         <input
           id="email"

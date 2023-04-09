@@ -195,23 +195,23 @@ body {
   scroll-margin-top: 10rem;
 }
 #About {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 2.5rem;
 }
 
 #Skills {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 3.5rem;
 }
 
 #Qualification {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 4.5rem;
 }
 
 #Projects {
-  scroll-margin-top: 0rem;
+  scroll-margin-top: -2rem;
 }
 
 #Contact {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 6rem;
 }
 
 a,
