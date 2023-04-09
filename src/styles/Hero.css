@@ -1,12 +1,13 @@
 .hero-container {
   background: no-repeat url(../assets/background/wave-dark.svg),
-    linear-gradient(#171c23 0%, #171c23 100%);
+    linear-gradient(#171c23 0%, #171c23 99.5%, #21272f 99.5%, #21272f 100%);
   background-position: bottom;
 }
 
 .hero-light {
   background: no-repeat url(../assets/background/wave-light.svg),
-    linear-gradient(#fff 0%, #fff 100%);
+    linear-gradient(#ffff 0%, #ffff 99.5%, #f1fcf9 99.5%, #f1fcf9 100%);
+
   background-position: bottom;
 }
 

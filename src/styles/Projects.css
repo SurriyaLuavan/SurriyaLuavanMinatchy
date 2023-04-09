@@ -1,12 +1,12 @@
 .projects-container {
   background: no-repeat url(../assets/background/wave-contact.svg),
-    linear-gradient(#21272f 0%, #21272f 100%);
+    linear-gradient(#21272f 0%, #21272f 99%, #29d882 99%, #29d882 100%);
   background-position: bottom;
 }
 
 .projects-light {
   background: no-repeat url(../assets/background/wave-contact.svg),
-    linear-gradient(#f1fcf9 0%, #f1fcf9 100%);
+    linear-gradient(#f1fcf9 0%, #f1fcf9 99%, #29d882 99%, #29d882 100%);
   background-position: bottom;
 }
 

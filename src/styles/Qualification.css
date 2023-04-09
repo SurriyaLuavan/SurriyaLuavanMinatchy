@@ -1,13 +1,13 @@
 .qualification-container {
   position: relative;
   background: no-repeat url(../assets/background/wave-dark-skills.svg),
-    linear-gradient(#171c23 0%, #171c23 100%);
+    linear-gradient(#21272f 0%, #21272f 0.5%, #171c23 0.5%, #171c23 100%);
   background-position: top;
 }
 
 .qualification-light {
   background: no-repeat url(../assets/background/wave-light-skills.svg),
-    linear-gradient(#fff 0%, #fff 100%);
+    linear-gradient(#f1fcf9 0%, #f1fcf9 0.5%, #fff 0.5%, #fff 100%);
   background-position: top;
 }
 
