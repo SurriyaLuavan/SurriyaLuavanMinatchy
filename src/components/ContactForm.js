@@ -4,6 +4,12 @@ import "../styles/ContactForm.css";
 import { useTheme } from "../context/ThemeProvider";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
+import { v4 as uuidv4 } from "uuid";
+
+const SERVICE_ID = "contact_service";
+const TEMPLATE_ID = "contact_form";
+const PUBLIC_KEY = "_W6L_5oStvWR06KXP";
 
 const ContactForm = () => {
   const { theme } = useTheme();
@@ -20,11 +26,6 @@ const ContactForm = () => {
         return { ...prev, [item]: false };
       });
     });
-  }
-
-  function handleSubmit(values) {
-    resetFocus();
-    formik.handleSubmit(values);
   }
 
   function handleFocus(e) {
@@ -50,14 +51,27 @@ const ContactForm = () => {
       email: Yup.string().email("Invalid email address").required("Required"),
       message: Yup.string().required("Required").min(8, "Min. 8 characters"),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      formik.handleReset();
+    onSubmit: async (values) => {
+      try {
+        const result = await emailjs.send(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          { ...values },
+          PUBLIC_KEY
+        );
+
+        if (result.text === "OK") {
+          formik.handleReset();
+          resetFocus();
+        }
+      } catch (err) {
+        console.log(err);
+      }
     },
   });
 
   return (
-    <form className=" contact-form" onSubmit={handleSubmit} noValidate>
+    <form className="contact-form" onSubmit={formik.handleSubmit} noValidate>
       <label htmlfor="name" className="label-container">
         <input
           id="name"
@@ -113,7 +127,7 @@ const ContactForm = () => {
           </p>
         ) : null}
       </label>
-      <button className="submit-btn |  uppercase btn inverted" type="submit">
+      <button className="submit-btn | uppercase btn inverted" type="submit">
         Send Message
       </button>
     </form>
