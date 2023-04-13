@@ -63,9 +63,9 @@ const Projects = () => {
         <ul className="project-card-container">
           {projects.map((project) => {
             return (
-              <SwiperSlide>
-                <ProjectCard key={uuidv4()} projectInfo={project} />
-              </SwiperSlide>
+              // <SwiperSlide>
+              <ProjectCard key={uuidv4()} projectInfo={project} />
+              // </SwiperSlide>
             );
           })}
         </ul>
