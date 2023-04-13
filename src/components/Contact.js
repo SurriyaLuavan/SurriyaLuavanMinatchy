@@ -88,7 +88,7 @@ const Contact = () => {
               <iframe
                 title="location"
                 style={{ height: "100%", width: "100%", border: 0 }}
-                src="https://www.google.com/maps/embed/v1/place?q=519+York+Street,+Fredericton,+NB,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                src="https://www.google.com/maps/embed/v1/place?q=4465+Juneau+Street,+Burnaby,+British+Columbia,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
               />
             </div>
             <div
