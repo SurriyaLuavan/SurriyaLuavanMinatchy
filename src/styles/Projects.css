@@ -1,13 +1,13 @@
 .projects-container {
   background: no-repeat url(../assets/background/wave-contact.svg),
-    linear-gradient(#21272f 0%, #21272f 99%, #29d882 99%, #29d882 100%);
-  background-position: bottom;
+    linear-gradient(#21272f 0%, #21272f 99.8%, #29d882 99.8%, #29d882 100%);
+  background-position: center bottom;
 }
 
 .projects-light {
   background: no-repeat url(../assets/background/wave-contact.svg),
-    linear-gradient(#f1fcf9 0%, #f1fcf9 99%, #29d882 99%, #29d882 100%);
-  background-position: bottom;
+    linear-gradient(#f1fcf9 0%, #f1fcf9 99.8%, #29d882 99.8%, #29d882 100%);
+  background-position: center bottom;
 }
 
 .projects-wrapper {
