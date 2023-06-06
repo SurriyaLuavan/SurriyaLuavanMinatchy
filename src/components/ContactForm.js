@@ -5,7 +5,6 @@ import { useTheme } from "../context/ThemeProvider";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
-import { v4 as uuidv4 } from "uuid";
 
 const SERVICE_ID = "contact_service";
 const TEMPLATE_ID = "contact_form";
