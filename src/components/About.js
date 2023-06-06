@@ -1,6 +1,5 @@
 import React from "react";
 import aboutIllustrators from "../assets/About.png";
-// import aboutIllustrators from "../assets/About-cropped.png";
 import "../styles/About.css";
 
 const About = () => {
@@ -25,15 +24,16 @@ const About = () => {
             </h2>
           </div>
           <p className="fs-secondary-body fw-regular text-tertiary">
-            As a budding frontend web developer, I'm passionate about creating
-            user-friendly web experiences that not only look great but are also
-            easy to use. With a Master's degree in Electrical and Computer
-            Engineering and a foundation in embedded software development, I
-            bring a unique perspective to my work. I enjoy learning new skills
-            and techniques to create elegant and efficient code that meets the
-            needs of both clients and end-users. In my free time, I love
-            exploring the latest design trends and experimenting with new
-            technologies to stay at the forefront of the industry
+            As a Junior Full Stack Developer, I am passionate about crafting
+            user-friendly web experiences that combine visual appeal with
+            usability. With a Master's degree in Electrical and Computer
+            Engineering and a background in software development, I bring a
+            unique perspective to my work. I thrive on continuous learning,
+            constantly expanding my skill set to create elegant and efficient
+            code that caters to client requirements and enhances the end-user
+            experience. During my free time, I explore the latest design trends
+            and experiment with emerging technologies to stay ahead in the
+            dynamic web development industry.
           </p>
           <div className="about-button-container">
             <button className="btn">
