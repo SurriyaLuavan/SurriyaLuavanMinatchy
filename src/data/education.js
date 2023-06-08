@@ -8,7 +8,7 @@ export const education = {
       title: "Meta Professional Certificate",
       program: "Front-End Developer",
       institution: "Coursera",
-      year: "Oct 2022 - Mar 2023",
+      year: "Sept 2022 - Mar 2023",
     },
     {
       title: "Master's Degree, Engineering",

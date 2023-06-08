@@ -97,10 +97,10 @@ const Contact = () => {
               }`}
             >
               <article>
-                <a className="icon-text" href="mailto: surriyaluavan@gmail.com">
+                <a className="icon-text" href="mailto: surriya.luavan@unb.ca">
                   <h3>{emailIcon}</h3>
                   <p className="text-footer fs-secondary-subheading fw-semi-bold ">
-                    surriyaluavan@gmail.com
+                    surriya.luavan@unb.ca
                   </p>
                 </a>
               </article>
