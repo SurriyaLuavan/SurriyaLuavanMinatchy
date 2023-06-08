@@ -11,10 +11,10 @@ export const work = {
       year: "May 2022 - Aug 2022",
     },
     {
-      title: "Co-instructor & TA",
+      title: "Research Assistant",
       institution: "University of New Brunswick",
-      program: "GSTA",
-      year: "Sep 2021 - Apr 2022",
+      program: "Work-Study",
+      year: "Jan 2022 - Apr 2022",
     },
     {
       title: "Junior Web Developer",

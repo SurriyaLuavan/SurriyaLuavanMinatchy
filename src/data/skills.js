@@ -10,10 +10,10 @@ import mongoLogo from "../assets/skills/MongoDB.png";
 import postgresLogo from "../assets/skills/PostgreSQL.png";
 import awsLogo from "../assets/skills/AWS.png";
 import dockerLogo from "../assets/skills/Docker.png";
-// import muiLogo from "../assets/skills/MUI.png";
-// import nextLogo from "../assets/skills/Nextjs.png";
-// import firebaseLogo from "../assets/skills/Firebase.png";
-// import figmaLogo from "../assets/skills/Figma.png";
+import muiLogo from "../assets/skills/MUI.png";
+import nextLogo from "../assets/skills/Nextjs.png";
+import firebaseLogo from "../assets/skills/Firebase.png";
+import figmaLogo from "../assets/skills/Figma.png";
 
 export const skills = [
   {
@@ -29,12 +29,24 @@ export const skills = [
     logo: jsLogo,
   },
   {
+    title: "TypeScript",
+    logo: tsLogo,
+  },
+  {
     title: "React",
     logo: reactLogo,
   },
   {
-    title: "TypeScript",
-    logo: tsLogo,
+    title: "Next.js",
+    logo: nextLogo,
+  },
+  {
+    title: "Material UI",
+    logo: muiLogo,
+  },
+  {
+    title: "Figma",
+    logo: figmaLogo,
   },
   {
     title: "Node.js",
@@ -47,6 +59,10 @@ export const skills = [
   {
     title: "Flask",
     logo: flaskLogo,
+  },
+  {
+    title: "Firebase",
+    logo: firebaseLogo,
   },
   {
     title: "MongoDB",
